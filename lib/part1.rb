@@ -25,7 +25,6 @@
 #instructions specified in the assignment description to hand-in your work.
 
 def palindrome?(str)
-  # YOUR CODE HERE
   match_string = str.downcase
   match_string = match_string.gsub(/[^\w]|[_]/, "")
   reverse_string = match_string.reverse
@@ -33,7 +32,6 @@ def palindrome?(str)
 end
 
 def count_words(str)
-  # YOUR CODE HERE
   str = str.downcase
   word_array = str.scan(/(\w+\b)+/)
   hash_array = Hash.new
